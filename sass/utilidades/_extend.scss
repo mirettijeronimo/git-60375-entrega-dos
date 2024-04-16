@@ -1,0 +1,52 @@
+%border{
+    box-shadow: 5px -5px 15px black ; //valores negativos izquierda y arriba
+    border: 1px solid black;
+    background-color: #87cefa;
+    margin: 5px 10px;//externo
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+}
+
+%fondo{
+    background: url("../imagenes/sol_en_escudo.png") center no-repeat scroll;
+    background-size: 500px;
+    background-color: transparent;
+    background-color: white;
+      
+}
+
+%fondonav{
+    background: url("../imagenes/imagenes-sol.jpg") center no-repeat scroll;
+    background-size:120px;
+    margin: 0px 10px;
+    background-color: white;
+    list-style: none; 
+    
+}
+
+%medidasnav{
+     //margin borde externo o padding borde interno 4 px arriba derecha abajo  izquierda
+     padding: 10px;
+     margin: 0px 10px;//externo
+     text-align: center;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 5px 5px 15px black ; //valores negativos izquierda y arriba
+ 
+}
+%propiedadesmain{
+    text-align: center;
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+%bordermain{
+    margin: 15px 10px;
+    border: 1px solid black;
+    margin: 5px 10px;//externo
+    padding: 5px 5px 5px 5px;
+}
+

@@ -1,0 +1,61 @@
+@media screen and (min-width: 600px){
+    #mediaquErygrid{
+       
+          .imgHeader{ 
+       width: 8%;
+       }
+    }
+}
+   
+   //mq de desktop
+@media screen and (min-width: 1024px ){
+    #mediaquErygrid{
+        header{
+            margin: 0px 60px;
+        }
+        main{
+           
+            text-align: center;
+            gap: 10px;
+            margin: 5px 60px;
+            .orDer1{
+                order: 1;
+            }
+            .orDer2{
+                order: 2;
+            }
+            .imgCinco{
+                width: 50%;
+                height: 50%;
+            }
+            .imgOcho{
+                width: 50%;
+                height: 50%;
+            }
+            .conTenedor{ 
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            } 
+            .gridItem{
+                padding: 5px 5px ;
+            }
+            .h3Right{
+                text-align: right;
+            }
+            .h3Left{
+                text-align: left;
+            }
+            main h1 {
+                align-items: center;
+            }
+            iframe{
+                width: 100%;
+                height: 250px;
+            }
+        }
+        footer{
+            margin: 0px 50px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.maiNgrid{
+    display: grid;
+    border: 1px solid black;
+    text-align: center;
+    
+    gap: 5px;
+    
+    margin: 15px 10px;
+    padding: 5px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 100%);
+    row-gap: 2rem;
+    section{
+        h1{
+            text-align: center;
+            color:#001b3b;
+        }
+        h2{
+            text-align: center;
+            color:#001b3b;
+            text-decoration: underline;
+        }
+        div{
+            margin: 5px;
+        }
+    }
+    .imgSiete {
+        width: 55%;
+        height: 70%;
+    }
+    .imgOcho{
+        order: -1;
+        width: 60%;
+        height: 50%;
+    }
+    iframe{
+        text-align: center;
+        width: 100%;
+        height: 10%;
+    }
+    img{
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//import
+
+@import "utilidades/mainpages";
+
+@import "utilidades/mediaquery";
+@import "utilidades/mediaquerygrid";
+
+@import"utilidades/variables";
+@import"utilidades/extend";
+@import "utilidades/mixin";
+
+header{
+    background-color : $colorFondo;
+    
+    @extend %medidasnav;
+
+    div{
+        .headErimg{
+        width: 10%;
+        }
+    }
+    .foNdo{
+        background-color: $colorFondo ;
+    }
+    .foNdo2 {
+       @extend %fondonav;
+       li{
+        a{
+            color: black;
+            font-weight: 700;
+        }
+        a:active{
+            background-color: $colorFondoli;
+        }
+        a:hover{
+            background-color: $colorFondoli;
+            text-shadow: 1px 1px yellow;
+        }
+    }
+}
+}
+
+main{
+    @extend %fondo;
+    @extend %propiedadesmain;
+    @extend %bordermain;
+    section{
+        h1{
+            text-align: center;
+            color:$colorh1;
+            
+        }
+        div{
+            margin: 10px;
+        }
+
+
+    }
+    h2{
+        text-align: center;
+        color:$colorh2;
+        text-decoration: underline;
+    }
+    div{
+        img{
+            @include medidas (25%,25%);
+        }
+    }
+    
+
+}
+
+footer{
+    section{
+        @extend %border;
+        .a2 {
+            color: $colorh2;
+            padding: 5px;
+        }
+    }
+}
