@@ -15,14 +15,20 @@
 @import"utilidades/extend";
 @import "utilidades/mixin";
 
+body{
+    background-color:black;
+}
 header{
+    @extend %formAimg;
     background-color : $colorFondo;
     
     @extend %medidasnav;
 
     div{
         .headErimg{
-        width: 10%;
+        width: 25%;
+        background-color:#87cefa ;
+        padding: 5px;
         }
     }
     .foNdo{
@@ -47,6 +53,7 @@ header{
 }
 
 main{
+    @extend %disenOimg;
     @extend %fondo;
     @extend %propiedadesmain;
     @extend %bordermain;
@@ -69,7 +76,7 @@ main{
     }
     div{
         img{
-            @include medidas (25%,25%);
+            @include medidas (100%,100%);
         }
     }
     
@@ -78,6 +85,13 @@ main{
 
 footer{
     section{
+       
+        img{
+            border-radius: 10% / 50%;
+            border: 2px black solid;
+            width: 20%;
+            
+        }
         @extend %border;
         .a2 {
             color: $colorh2;
@@ -85,3 +99,5 @@ footer{
         }
     }
 }
+
+

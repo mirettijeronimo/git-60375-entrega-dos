@@ -1,17 +1,30 @@
+
+
 @media screen and (min-width: 600px){
-    #mediaquErygrid{
+    #mediaquErygrid{ 
+        header{
+             .headErimg{ 
+                width: 20%;
+            }
+        }
+        footer{
+            img{
+                width: 15%;
+            }
+        }
        
-          .imgHeader{ 
-       width: 8%;
-       }
     }
 }
    
    //mq de desktop
 @media screen and (min-width: 1024px ){
     #mediaquErygrid{
-        header{
+       
+         header{
             margin: 0px 60px;
+            .headErimg{
+                width: 10%;
+            }
         }
         main{
            
@@ -24,9 +37,15 @@
             .orDer2{
                 order: 2;
             }
+            
             .imgCinco{
                 width: 50%;
                 height: 50%;
+            }
+            .imgSeis{
+                padding-bottom: 10px;
+                width: 60%;
+                height: 60%;
             }
             .imgOcho{
                 width: 50%;
@@ -56,6 +75,10 @@
         }
         footer{
             margin: 0px 50px;
+            img{
+                width: 10%;
+            }
+            
         }
     }
 }
