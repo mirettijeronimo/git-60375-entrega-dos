@@ -7,13 +7,12 @@
     padding: 10px;
     text-align: center;
 }
-
 %fondo{
-    background: url("../imagenes/sol_en_escudo.png") center no-repeat scroll;
-    background-size: 500px;
+    background: url("../imagenes/fondo-ar.jpg") center no-repeat scroll;
+    background-size: 45%;
     background-color: transparent;
-    background-color: white;
-      
+    background-color: white;  
+    
 }
 
 %fondonav{
@@ -56,7 +55,16 @@
 }
 
 %disenOimg{
-    img{border-radius:30%;
-        border: 1rem solid black;
+  
+.imgDos, .imgCuatro, .imgOcho, .imgNueve {
+    border-top-left-radius: 50%;
+border: black 10px double;
+background-clip: content-box;
 }
+.imgDos, .imgUno, .imgTres,.imgCinco,.imgSeis,.imgSiete ,.imgDiez{
+    border-top-right-radius: 50%;
+border: black 10px double;
+background-clip: content-box;
+}
+
 }

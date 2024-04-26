@@ -19,14 +19,28 @@
   grid-template-rows: repeat(8, 100%);
   row-gap: 2rem;
 }
+.maiNgrid iframe {
+  border: 5px solid black;
+}
 .maiNgrid section h1 {
+  text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;
+  justify-content: center;
   text-align: center;
-  color: #001b3b;
+  color: yellow;
 }
 .maiNgrid section h2 {
+  text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;
   text-align: center;
-  color: #001b3b;
+  color: yellow;
   text-decoration: underline;
+}
+.maiNgrid section .h2Grid {
+  padding-bottom: 100px;
+}
+.maiNgrid section h3 {
+  text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 1em #0678c3;
+  color: #87cefa;
+  text-align: justify;
 }
 .maiNgrid section div {
   margin: 5px;
@@ -59,6 +73,19 @@
   #mediAquery header {
     margin: 0px 30px;
   }
+  #mediAquery header .foNdo2 li a {
+    display: flex;
+    font-size: large;
+    color: black;
+    font-weight: 700;
+  }
+  #mediAquery header .foNdo2 li a:active {
+    background-color: #87cefa;
+  }
+  #mediAquery header .foNdo2 li a:hover {
+    background-color: #e6e6dd;
+    text-shadow: 1px 1px yellow;
+  }
   #mediAquery header nav .headErimg {
     width: 20%;
   }
@@ -89,7 +116,13 @@
 }
 @media screen and (min-width: 600px) and (min-width: 1024px) {
   #mediAquery header {
-    margin: 0px 60px;
+    margin: 0px 5px;
+  }
+  #mediAquery header .foNdo2 li a {
+    display: flex;
+    font-size: large;
+    color: black;
+    font-weight: 700;
   }
   #mediAquery header .headErimg {
     width: 10%;
@@ -105,7 +138,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 5px 60px;
+    margin: 5px 5px;
   }
   #mediAquery main section img {
     width: 25%;
@@ -134,15 +167,34 @@
     text-align: left;
   }
   #mediAquery footer {
-    margin: 0px 50px;
+    margin: 0px 0px;
   }
   #mediAquery footer section img {
     width: 10%;
   }
 }
 @media screen and (min-width: 600px) {
+  #mediaquErygrid header .foNdo2 li a {
+    display: flex;
+    font-size: large;
+    color: black;
+    font-weight: 700;
+  }
+  #mediaquErygrid header .foNdo2 li a:active {
+    background-color: #87cefa;
+  }
+  #mediaquErygrid header .foNdo2 li a:hover {
+    background-color: #e6e6dd;
+    text-shadow: 1px 1px yellow;
+  }
   #mediaquErygrid header .headErimg {
     width: 20%;
+  }
+  #mediaquErygrid main .h2Grid {
+    padding-bottom: 5px;
+  }
+  #mediaquErygrid main iframe {
+    border: 5px solid black;
   }
   #mediaquErygrid footer img {
     width: 15%;
@@ -150,7 +202,13 @@
 }
 @media screen and (min-width: 1024px) {
   #mediaquErygrid header {
-    margin: 0px 60px;
+    margin: 0px 5px;
+  }
+  #mediaquErygrid header .foNdo2 li a {
+    display: flex;
+    font-size: large;
+    color: black;
+    font-weight: 700;
   }
   #mediaquErygrid header .headErimg {
     width: 10%;
@@ -158,7 +216,10 @@
   #mediaquErygrid main {
     text-align: center;
     gap: 10px;
-    margin: 5px 60px;
+    margin: 5px 5px;
+  }
+  #mediaquErygrid main .h2Grid {
+    padding-bottom: 5px;
   }
   #mediaquErygrid main .orDer1 {
     order: 1;
@@ -201,7 +262,7 @@
     height: 250px;
   }
   #mediaquErygrid footer {
-    margin: 0px 50px;
+    margin: 0px 5px;
   }
   #mediaquErygrid footer img {
     width: 10%;
@@ -218,8 +279,8 @@ footer section {
 }
 
 main {
-  background: url("../imagenes/sol_en_escudo.png") center no-repeat scroll;
-  background-size: 500px;
+  background: url("../imagenes/fondo-ar.jpg") center no-repeat scroll;
+  background-size: 45%;
   background-color: transparent;
   background-color: white;
 }
@@ -258,9 +319,15 @@ header img {
   border: 2px black solid;
 }
 
-main img {
-  border-radius: 30%;
-  border: 1rem solid black;
+main .imgDos, main .imgCuatro, main .imgOcho, main .imgNueve {
+  border-top-left-radius: 50%;
+  border: black 10px double;
+  background-clip: content-box;
+}
+main .imgDos, main .imgUno, main .imgTres, main .imgCinco, main .imgSeis, main .imgSiete, main .imgDiez {
+  border-top-right-radius: 50%;
+  border: black 10px double;
+  background-clip: content-box;
 }
 
 body {
@@ -271,7 +338,7 @@ header {
   background-color: #87cefa;
 }
 header div .headErimg {
-  width: 25%;
+  width: 23%;
   background-color: #87cefa;
   padding: 5px;
 }
@@ -279,6 +346,9 @@ header .foNdo {
   background-color: #87cefa;
 }
 header .foNdo2 li a {
+  display: flex;
+  justify-content: center;
+  font-size: xx-small;
   color: black;
   font-weight: 700;
 }
@@ -291,20 +361,32 @@ header .foNdo2 li a:hover {
 }
 
 main section h1 {
+  text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;
   text-align: center;
-  color: #000d1d;
+  justify-content: center;
+  color: yellow;
 }
 main section div {
   margin: 10px;
 }
 main h2 {
+  text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;
+  margin: 10px;
   text-align: center;
-  color: #001b3b;
+  color: yellow;
   text-decoration: underline;
+}
+main h3 {
+  text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 1em #0678c3;
+  color: #87cefa;
+  text-align: justify;
 }
 main div img {
   height: 100%;
   width: 100%;
+}
+main iframe {
+  border: 5px solid black;
 }
 
 footer section img {

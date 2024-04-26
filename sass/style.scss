@@ -26,7 +26,7 @@ header{
 
     div{
         .headErimg{
-        width: 25%;
+        width: 23%;
         background-color:#87cefa ;
         padding: 5px;
         }
@@ -37,16 +37,21 @@ header{
     .foNdo2 {
        @extend %fondonav;
        li{
-        a{
+        a{ 
+            display: flex;
+            justify-content: center;
+            font-size: xx-small;
             color: black;
             font-weight: 700;
         }
         a:active{
             background-color: $colorFondoli;
+           
         }
         a:hover{
             background-color: $colorFondoli;
             text-shadow: 1px 1px yellow;
+             
         }
     }
 }
@@ -58,10 +63,13 @@ main{
     @extend %propiedadesmain;
     @extend %bordermain;
     section{
+        
         h1{
+            text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;       
             text-align: center;
-            color:$colorh1;
-            
+            justify-content: center;
+            color:yellow;
+           
         }
         div{
             margin: 10px;
@@ -70,14 +78,25 @@ main{
 
     }
     h2{
+        text-shadow: 2px 2px 2px rgb(239, 44, 44), 0 0 1em black, 0 0 1em black;
+        margin: 10px;
         text-align: center;
-        color:$colorh2;
+        color:yellow;
         text-decoration: underline;
+    }
+    
+    h3{
+        text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 1em #0678c3;
+        color: #87cefa;
+        text-align: justify;
     }
     div{
         img{
             @include medidas (100%,100%);
         }
+    }
+    iframe{
+        border: 5px solid black;
     }
     
 

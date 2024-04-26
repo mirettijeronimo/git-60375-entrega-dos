@@ -1,23 +1,43 @@
 @media screen and (min-width: 600px){
   #mediAquery{
     header { 
-        
+        .foNdo2 {
+            li{
+             a{ 
+                 display: flex;
+                 font-size: large;
+                 color: black;
+                 font-weight: 700;
+             }
+             a:active{
+                 background-color:#87cefa ;
+                
+             }
+             a:hover{
+                 background-color: #e6e6dd;
+                 text-shadow: 1px 1px yellow;
+                
+             }
+         }
+     }
         margin: 0px 30px;
         nav { 
             .headErimg{
                 width: 20%;
                 }
+
             ul{ 
                 display: flex;
                 list-style: none;
                 gap: 10px;
                 color: #e6e6dd;
         }
+       
         
     }
    
 }
-main{
+main{ 
     display: flex;
     text-align: center;
     margin: 15px 30px;
@@ -41,7 +61,17 @@ footer{
 @media screen and (min-width: 1024px ){
     #mediAquery{
         header{ 
-            margin: 0px 60px;
+            .foNdo2 {
+                li{
+                 a{ 
+                     display: flex;
+                     font-size: large;
+                     color: black;
+                     font-weight: 700;
+                }
+            }
+        }
+            margin: 0px 5px;
             .headErimg{
                 width: 10%;
                 }
@@ -60,7 +90,8 @@ footer{
         align-items: center;
         justify-content: center;
         gap: 10px;
-        margin: 5px 60px;
+        margin: 5px 5px;
+        
         section{
             img{
                 width: 25%;
@@ -93,7 +124,7 @@ footer{
     
     }
     footer{
-        margin: 0px 50px;
+        margin: 0px 0px;
         section{
             img{
                 width: 10%;
