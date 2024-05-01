@@ -19,6 +19,9 @@ body{
     background-color:black;
 }
 header{
+    .redirEccion{
+        text-align: left;
+    }
     @extend %formAimg;
     background-color : $colorFondo;
     
@@ -26,15 +29,17 @@ header{
 
     div{
         .headErimg{
-        width: 23%;
+        width: 35%;
         background-color:#87cefa ;
-        padding: 5px;
+        padding: 2px;
+       
         }
     }
     .foNdo{
         background-color: $colorFondo ;
     }
     .foNdo2 {
+        
        @extend %fondonav;
        li{
         a{ 
@@ -43,6 +48,8 @@ header{
             font-size: xx-small;
             color: black;
             font-weight: 700;
+            margin-right: 90px;
+
         }
         a:active{
             background-color: $colorFondoli;
@@ -89,6 +96,10 @@ main{
         text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 1em #0678c3;
         color: #87cefa;
         text-align: justify;
+    }
+    .coloRh3{
+        color: rgb(255, 223, 45);
+        text-shadow: 2px 2px 2px black, 0 0 1em yellow, 0 0 1em yellow;
     }
     div{
         img{

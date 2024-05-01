@@ -1,11 +1,20 @@
 @media screen and (min-width: 600px){
   #mediAquery{
     header { 
+        margin: 0px 30px;
+        .headErimg{
+            width: 15%;
+        }
+        .redirEccion{
+            text-align: left;
+        } 
         .foNdo2 {
             li{
              a{ 
+                margin-right: 200px;
                  display: flex;
-                 font-size: large;
+                 text-align: center;
+                 font-size: small;
                  color: black;
                  font-weight: 700;
              }
@@ -20,12 +29,9 @@
              }
          }
      }
-        margin: 0px 30px;
+        
         nav { 
-            .headErimg{
-                width: 20%;
-                }
-
+            
             ul{ 
                 display: flex;
                 list-style: none;
@@ -60,10 +66,19 @@ footer{
 
 @media screen and (min-width: 1024px ){
     #mediAquery{
-        header{ 
+        header{
+            .headErimg{
+                width: 15%;
+            }
+
+            margin: 0px 5px;
+            .redirEccion{
+                text-align: left;
+            } 
             .foNdo2 {
                 li{
                  a{ 
+                    margin-right: 300px;
                      display: flex;
                      font-size: large;
                      color: black;
@@ -71,10 +86,7 @@ footer{
                 }
             }
         }
-            margin: 0px 5px;
-            .headErimg{
-                width: 10%;
-                }
+            
         nav{
             ul {
                 display: flex;
